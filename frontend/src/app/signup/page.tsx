@@ -8,7 +8,6 @@ export default function Signup() {
   const handleChange = (e: any) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
-
   const handleSubmit = async (e: any) => {
     e.preventDefault()
     const res = await fetch('http://localhost:5000/api/auth/signup', {
